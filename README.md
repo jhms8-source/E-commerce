@@ -2,11 +2,11 @@
 
 ## Integrantes
 - Menezes – UI/UX e Front-end
-- Pessoa 2 – JavaScript
-- Pessoa 3 – Back-end (Node.js)
+- Anthony – JavaScript
+- Anderson S. – Back-end (Node.js)
 - Guilherme – Banco de Dados (SQL)
-- Pessoa 5 – Painel Administrativo
-- Seu nome – Testes, Documentação e Gerenciamento
+- Hiago C. – Painel Administrativo
+- Anderson O. – Testes, Documentação e Gerenciamento
 
 ## Tecnologias
 - HTML
