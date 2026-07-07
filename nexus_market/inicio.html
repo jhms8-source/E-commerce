@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Market</title>
     <link rel="stylesheet" href="/style/inicio.css">
+    <link rel="stylesheet" href="/style/theme.css">
     <link rel="icon" type="image/png" href="/imagens/logo2.png">
 </head>
 
@@ -18,11 +19,13 @@
         </div>
 
         <div class="search-bar">
-            <input type="text" placeholder="Buscar no Nexus Market">
+            <input type="text" id="campoBusca" placeholder="Buscar no Nexus Market" aria-label="Buscar produtos">
         </div>
 
         <div class="menu-usuario">
-            <a href="/nexus_market/entrar.html">Minha Conta</a>
+            <button class="theme-toggle" type="button" id="themeToggle">☀️ Claro</button>
+            <span id="usuarioLogado" class="usuario-logado">Olá, visitante</span>
+            <a href="/nexus_market/entrar.html" id="linkConta">Entrar</a>
             <a href="/nexus_market/carrinho.html">Meu Carrinho (0)</a>
         </div>
     </header>
@@ -39,7 +42,6 @@
     <section class="hero-banner">
         <div class="banner-conteudo">
             <h2>As melhores ofertas do ano!</h2>
-            <p>Descontos de até 50% em toda a loja.</p>
             <button>Aproveitar Agora</button>
         </div>
     </section>
@@ -48,6 +50,7 @@
     <section class="vitrine">
 
         <h2>Produtos em Destaque</h2>
+        <p id="mensagemBusca" class="mensagem-busca" style="display:none;"></p>
         <!-- vitrine de iphones -->
         <div class="lista-produtos">
 
@@ -134,6 +137,9 @@
 
     </footer>
 
+    <script src="../javascript/inicio.js"></script>
+    <script src="../javascript/carrinho.js"></script>
+    <script src="../javascript/theme.js"></script>
 </body>
 
 </html>

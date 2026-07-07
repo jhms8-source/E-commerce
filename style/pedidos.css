@@ -50,14 +50,15 @@ font-size:35px;
 
 .pedido{
 background:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
 padding:20px;
 margin-bottom:25px;
 border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 transition:.3s;
+display:grid;
+grid-template-columns:1.5fr auto;
+gap:15px;
+align-items:start;
 }
 
 .pedido:hover{
@@ -132,6 +133,41 @@ transition:.3s;
 
 .valor button:hover{
 background:#009624;
+}
+
+.status-pedido{
+background:#dbeafe;
+color:#2563eb;
+padding:4px 10px;
+border-radius:999px;
+font-weight:700;
+}
+
+.detalhes-pedido{
+display:none;
+grid-column:1 / -1;
+margin-top:10px;
+padding:15px;
+background:#f8fafc;
+border:1px solid #e2e8f0;
+border-radius:10px;
+}
+
+.detalhes-pedido.ativo{
+display:block;
+}
+
+.item-pedido{
+display:flex;
+justify-content:space-between;
+gap:12px;
+padding:8px 0;
+border-bottom:1px solid #e2e8f0;
+color:#334155;
+}
+
+.item-pedido:last-child{
+border-bottom:none;
 }
 
 footer{

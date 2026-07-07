@@ -18,7 +18,8 @@
         </div>
 
         <div class="menu-usuario">
-            <a href="/nexus_market/entrar.html">Minha Conta</a>
+            <span id="usuarioLogado" class="usuario-logado"></span>
+            <a href="/nexus_market/entrar.html" id="linkConta">Minha Conta</a>
         </div>
     </header>
 
@@ -79,7 +80,7 @@
                     <span>R$ 0,00</span>
                 </div>
 
-                <button class="btn-finalizar">
+                <button class="btn-finalizar" id="btnFinalizarCompra">
                     Finalizar Compra
                 </button>
 
@@ -111,6 +112,8 @@
 
     </footer>
 
+    <script src="../javascript/auth-guard.js"></script>
+    <script src="../javascript/carrinho.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Endereços | Nexus Market</title>
     <link rel="stylesheet" href="/style/enderecos.css">
+    <link rel="stylesheet" href="/style/theme.css">
     <link rel="icon" type="image/png" href="/imagens/logo2.png">
 </head>
 
@@ -18,6 +19,7 @@
         </div>
 
         <nav>
+            <button class="theme-toggle" type="button" id="themeToggle">☀️ Claro</button>
             <a href="/nexus_market/inicio.html">Início</a>
             <a href="/nexus_market/carrinho.html">Carrinho</a>
             <a href="/nexus_market/minha-conta.html">Minha Conta</a>
@@ -35,18 +37,25 @@
 
         <div id="lista-enderecos" class="lista-enderecos">
 
-            <!--
-            O JavaScript do seu amigo irá adicionar
-            os endereços automaticamente aqui.
-            -->
+            <!-- Os endereços cadastrados aparecem aqui. -->
 
         </div>
 
         <div class="novo-endereco">
-
-            <button>+ Adicionar Novo Endereço</button>
-
+            <button type="button" id="btnAdicionarEndereco">+ Adicionar Novo Endereço</button>
         </div>
+
+        <form id="formEndereco" class="form-endereco">
+            <h3>Adicionar endereço</h3>
+            <input type="text" id="tituloEndereco" placeholder="Ex.: Casa, Trabalho" required>
+            <input type="text" id="cepEndereco" placeholder="CEP" required>
+            <input type="text" id="logradouroEndereco" placeholder="Logradouro" required>
+            <input type="text" id="numeroEndereco" placeholder="Número" required>
+            <input type="text" id="bairroEndereco" placeholder="Bairro" required>
+            <input type="text" id="cidadeEndereco" placeholder="Cidade" required>
+            <input type="text" id="estadoEndereco" placeholder="Estado" required>
+            <button type="submit" id="btnSalvarEndereco" class="btn-salvar">Salvar endereço</button>
+        </form>
 
     </main>
 
@@ -71,6 +80,9 @@
 
     </footer>
 
+    <script src="../javascript/auth-guard.js"></script>
+    <script src="../javascript/enderecos.js"></script>
+    <script src="../javascript/theme.js"></script>
 </body>
 
 </html>

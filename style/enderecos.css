@@ -129,6 +129,44 @@ nav a:hover{
     background:#dc2626;
 }
 
+/* FORMULÁRIO */
+
+.form-endereco{
+    margin-top:35px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    display:grid;
+    gap:12px;
+}
+
+.form-endereco h3{
+    color:#0f172a;
+    margin-bottom:5px;
+}
+
+.form-endereco input{
+    padding:12px 14px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.form-endereco .btn-salvar{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.form-endereco .btn-salvar:hover{
+    background:#1d4ed8;
+}
+
 /* BOTÃO NOVO */
 
 .novo-endereco{

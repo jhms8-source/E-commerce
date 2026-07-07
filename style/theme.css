@@ -1,0 +1,135 @@
+:root {
+    color-scheme: light;
+    --bg: #f4f7f6;
+    --text: #0f172a;
+    --muted: #64748b;
+    --surface: #ffffff;
+    --surface-alt: #f8fafc;
+    --border: #e2e8f0;
+    --primary: #00f2fe;
+    --primary-strong: #00c8ff;
+    --accent: #10b981;
+    --accent-hover: #059669;
+    --shadow: rgba(15, 23, 42, 0.08);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #020617;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --surface: #111827;
+    --surface-alt: #1f2937;
+    --border: #334155;
+    --primary: #38bdf8;
+    --primary-strong: #0ea5e9;
+    --accent: #34d399;
+    --accent-hover: #10b981;
+    --shadow: rgba(2, 6, 23, 0.45);
+}
+
+body {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+header,
+footer,
+main,
+section,
+article,
+form,
+input,
+textarea,
+select,
+.pagina,
+.lista-enderecos,
+.card-endereco,
+.produto-card,
+.card,
+.item-produto,
+.pedido,
+.form-endereco,
+.resumo-carrinho,
+.container-carrinho {
+    background-color: var(--surface) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+header,
+footer,
+.pagina,
+.resumo-carrinho,
+.container-carrinho,
+.form-endereco,
+.card-endereco,
+.produto-card,
+.card,
+.item-produto,
+.pedido {
+    box-shadow: 0 5px 15px var(--shadow) !important;
+}
+
+p,
+span,
+label,
+li,
+small,
+.descricao,
+.categoria-item,
+.info p {
+    color: var(--muted) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text) !important;
+}
+
+a {
+    color: var(--text) !important;
+}
+
+button,
+.btn-comprar,
+.btn-salvar,
+.btn-remover,
+.btn-qtd,
+.btn-continuar,
+.btn-detalhes,
+.novo-endereco button {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.theme-toggle {
+    border: 1px solid var(--border);
+    background: var(--surface-alt);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.theme-toggle:hover {
+    background: var(--primary);
+    color: #020617;
+}
+
+input,
+textarea,
+select {
+    background-color: var(--surface-alt) !important;
+    color: var(--text) !important;
+}
+
+img {
+    filter: none;
+}

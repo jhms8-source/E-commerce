@@ -57,6 +57,16 @@ header{
     color:#00f2fe;
 }
 
+.usuario-logado{
+    color:#00f2fe;
+    font-weight:600;
+    margin-right:5px;
+}
+
+#btnSair{
+    color:#ff6b6b;
+}
+
 /* categorias */
 
 .categoria{
@@ -189,6 +199,26 @@ header{
 .btn-comprar:hover{
     background:#00f2fe;
     color:#0f172a;
+}
+
+.mensagem-busca{
+    text-align:center;
+    margin:10px 0 25px;
+    color:#64748b;
+    font-weight:600;
+}
+
+.btn-comprar-adicionado{
+    background:#16a34a !important;
+    color:white !important;
+    transform:scale(1.03);
+    animation:pulse-adicionado .9s ease;
+}
+
+@keyframes pulse-adicionado{
+    0% { transform:scale(1); }
+    50% { transform:scale(1.05); }
+    100% { transform:scale(1.03); }
 }
 
 /* rodape */

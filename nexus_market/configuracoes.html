@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações | Nexus Market</title>
     <link rel="stylesheet" href="/style/configuracoes.css">
+    <link rel="stylesheet" href="/style/theme.css">
     <link rel="icon" type="image/png" href="/imagens/logo2.png">
 </head>
 
@@ -58,9 +59,9 @@
         <div class="config-card">
             <h3>🌙 Tema</h3>
 
-            <select>
-                <option>Claro</option>
-                <option>Escuro</option>
+            <select id="selectTema">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
             </select>
 
         </div>
@@ -68,9 +69,7 @@
     </div>
 
     <div class="salvar">
-
-        <button>Salvar Alterações</button>
-
+        <button type="button">Salvar Alterações</button>
     </div>
 
 </main>
@@ -96,6 +95,9 @@
 
 </footer>
 
+    <script src="../javascript/auth-guard.js"></script>
+    <script src="../javascript/configuracoes.js"></script>
+    <script src="../javascript/theme.js"></script>
 </body>
 
 </html>

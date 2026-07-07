@@ -44,7 +44,33 @@ os cartões automaticamente aqui.
 
 <div class="novo-cartao">
 
-<button>+ Adicionar Cartão</button>
+<button type="button" id="btnAdicionarCartao">+ Adicionar Cartão</button>
+
+<form id="formCartao" class="form-cartao hidden">
+    <h3>Adicionar novo cartão</h3>
+    <label>
+        Nome no cartão
+        <input type="text" id="nomeCartao" placeholder="Ex: João da Silva" required>
+    </label>
+    <label>
+        Número do cartão
+        <input type="text" id="numeroCartao" placeholder="0000 0000 0000 0000" maxlength="19" required>
+    </label>
+    <div class="linha-campos">
+        <label>
+            Validade
+            <input type="text" id="validadeCartao" placeholder="MM/AA" maxlength="5" required>
+        </label>
+        <label>
+            CVV
+            <input type="text" id="cvvCartao" placeholder="123" maxlength="4" required>
+        </label>
+    </div>
+    <div class="botoes-form">
+        <button type="submit" class="btn-salvar">Salvar cartão</button>
+        <button type="button" id="btnCancelarCartao" class="btn-cancelar">Cancelar</button>
+    </div>
+</form>
 
 </div>
 
@@ -71,6 +97,8 @@ os cartões automaticamente aqui.
 
 </footer>
 
+    <script src="../javascript/auth-guard.js"></script>
+    <script src="../javascript/pagamentos.js"></script>
 </body>
 
 </html>

@@ -24,9 +24,8 @@
   <main class="container">
     <aside class="perfil">
       <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Perfil">
-      <h2>Nome do Usuário</h2>
+      <h2 id="nomeUsuario">Nome do Usuário</h2>
       <p>Cliente Nexus Market</p>
-      <button>Editar Perfil</button>
     </aside>
 
     <section class="conteudo">
@@ -58,17 +57,18 @@
         </div>
 
         <div class="card sair">
-          <h3>🚪 Sair</h3>
-          <p>Encerrar sessão.</p>
-          <a href="/nexus_market/sair.html">Sair</a>
+          <h3>🚪 Encerrar sessão</h3>
+          <p>Finalizar o acesso atual.</p>
+          <a href="./sair.html" id="btnEncerrarSessao">Sair</a>
         </div>
+
       </div>
 
       <div class="informacoes">
         <h3>Informações Pessoais</h3>
-        <p><strong>Email:</strong> usuario@email.com</p>
-        <p><strong>Telefone:</strong> (00) 00000-0000</p>
-        <p><strong>Endereço:</strong> Rua Exemplo, 123</p>
+        <p><strong>Email:</strong> <span id="emailUsuario">usuario@email.com</span></p>
+        <p><strong>Telefone:</strong> <span id="telefoneUsuario">(00) 00000-0000</span></p>
+        <p><strong>CPF:</strong> <span id="cpfUsuario">000.000.000-00</span></p>
       </div>
     </section>
   </main>
@@ -89,6 +89,9 @@
       <p>Pix • Cartão • Boleto</p>
     </div>
   </footer>
+
+  <script src="../javascript/auth-guard.js"></script>
+  <script src="../javascript/minha-conta.js"></script>
 </body>
 
 </html>
