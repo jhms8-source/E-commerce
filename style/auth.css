@@ -1,0 +1,205 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CAIXA */
+
+.login-box{
+    width:450px;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+/* LOGO */
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo h1{
+    color:#0f172a;
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.logo p{
+    color:#64748b;
+    font-size:16px;
+}
+
+/* INPUTS */
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    color:#334155;
+    font-weight:600;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    outline:none;
+    border-color:#00f2fe;
+    box-shadow:0 0 8px rgba(0,242,254,.3);
+}
+
+/* ESQUECI SENHA */
+
+.esqueci{
+    display:block;
+    text-align:right;
+    margin-bottom:20px;
+    color:#2563eb;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.esqueci:hover{
+    text-decoration:underline;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.btn-principal{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#00d4ff;
+    color:#0f172a;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-principal:hover{
+    background:#00b8df;
+    transform:translateY(-2px);
+}
+
+/* DIVISOR */
+
+.divisor{
+    display:flex;
+    align-items:center;
+    margin:25px 0;
+}
+
+.divisor::before,
+.divisor::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#d1d5db;
+}
+
+.divisor span{
+    margin:0 15px;
+    color:#64748b;
+}
+
+/* GOOGLE */
+
+.btn-google,
+.btn-apple{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    font-size:15px;
+    cursor:pointer;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.btn-google:hover,
+.btn-apple:hover{
+    background:#f8fafc;
+}
+
+.btn-google img,
+.btn-apple img{
+    width:24px;
+    height:24px;
+}
+
+/* CADASTRO */
+
+.cadastro{
+    text-align:center;
+    margin-top:25px;
+}
+
+.cadastro p{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.cadastro a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.cadastro a:hover{
+    text-decoration:underline;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:500px){
+
+.login-box{
+    width:100%;
+    padding:30px 20px;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+}
