@@ -1,0 +1,213 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f7f6;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:#0f172a;
+padding:20px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h1{
+color:#00f2fe;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00f2fe;
+}
+
+/* CONTEÚDO */
+
+.pagina{
+width:90%;
+margin:40px auto;
+}
+
+.pagina h2{
+font-size:34px;
+color:#0f172a;
+margin-bottom:15px;
+}
+
+.descricao{
+color:#64748b;
+margin-bottom:35px;
+}
+
+/* LISTA */
+
+.lista-pagamentos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+min-height:300px;
+}
+
+/* CARD */
+
+.card-pagamento{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card-pagamento:hover{
+transform:translateY(-5px);
+}
+
+.card-pagamento h3{
+margin-bottom:20px;
+color:#0f172a;
+}
+
+.card-pagamento p{
+margin-bottom:10px;
+color:#64748b;
+}
+
+.botoes{
+display:flex;
+gap:10px;
+margin-top:20px;
+}
+
+.btn-editar,
+.btn-remover{
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn-editar{
+background:#00c8ff;
+color:white;
+}
+
+.btn-editar:hover{
+background:#009fd6;
+}
+
+.btn-remover{
+background:#ef4444;
+color:white;
+}
+
+.btn-remover:hover{
+background:#dc2626;
+}
+
+/* BOTÃO */
+
+.novo-cartao{
+margin-top:40px;
+text-align:center;
+}
+
+.novo-cartao button{
+background:#10b981;
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:10px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.novo-cartao button:hover{
+background:#059669;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:70px;
+background:#0f172a;
+padding:40px 5%;
+display:flex;
+justify-content:space-between;
+color:#94a3b8;
+}
+
+.footer-coluna{
+width:30%;
+}
+
+.footer-coluna h4{
+color:white;
+margin-bottom:15px;
+}
+
+.footer-coluna a{
+display:block;
+text-decoration:none;
+color:#94a3b8;
+margin-bottom:10px;
+}
+
+.footer-coluna a:hover{
+color:#00f2fe;
+}
+
+.footer-coluna p{
+line-height:1.6;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.lista-pagamentos{
+grid-template-columns:1fr;
+}
+
+footer{
+flex-direction:column;
+gap:30px;
+}
+
+.footer-coluna{
+width:100%;
+}
+
+}

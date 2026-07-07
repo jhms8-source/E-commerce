@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif
+}
+
+body {
+    background: #f4f7f6
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    padding: 20px 5%
+}
+
+.logo h1 {
+    color: #00f2fe
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    justify-content: center
+}
+
+.search input {
+    width: 420px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px
+}
+
+nav a:hover {
+    color: #00f2fe
+}
+
+.banner {
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    padding: 60px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 25px;
+    width: 90%;
+    margin: 40px auto
+}
+
+.filtros {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .08)
+}
+
+.filtros label {
+    display: block;
+    margin: 8px 0
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px
+}
+
+.card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+    text-align: center
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 12px 0
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0f172a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+button:hover {
+    background: #00f2fe;
+    color: #0f172a
+}
+
+footer {
+    margin-top: 40px;
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 25px
+}
+
+@media(max-width:900px) {
+    .container {
+        grid-template-columns: 1fr
+    }
+
+    .search input {
+        width: 100%
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px
+    }
+}

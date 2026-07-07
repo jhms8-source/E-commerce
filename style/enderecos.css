@@ -1,0 +1,217 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 5%;
+}
+
+.logo h1{
+    color:#00f2fe;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00f2fe;
+}
+
+/* CONTEÚDO */
+
+.pagina{
+    width:90%;
+    margin:40px auto;
+}
+
+.pagina h2{
+    font-size:34px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.descricao{
+    color:#64748b;
+    margin-bottom:35px;
+}
+
+/* LISTA */
+
+.lista-enderecos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:25px;
+    min-height:300px;
+}
+
+/* CARD */
+
+.card-endereco{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card-endereco:hover{
+    transform:translateY(-5px);
+}
+
+.card-endereco h3{
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.card-endereco p{
+    color:#64748b;
+    margin-bottom:8px;
+}
+
+.botoes{
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+}
+
+.btn-editar,
+.btn-remover{
+
+    flex:1;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-editar{
+    background:#00c8ff;
+    color:white;
+}
+
+.btn-editar:hover{
+    background:#00a7d8;
+}
+
+.btn-remover{
+    background:#ef4444;
+    color:white;
+}
+
+.btn-remover:hover{
+    background:#dc2626;
+}
+
+/* BOTÃO NOVO */
+
+.novo-endereco{
+    text-align:center;
+    margin-top:40px;
+}
+
+.novo-endereco button{
+    background:#10b981;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.novo-endereco button:hover{
+    background:#059669;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:70px;
+    background:#0f172a;
+    color:#94a3b8;
+    display:flex;
+    justify-content:space-between;
+    padding:40px 5%;
+}
+
+.footer-coluna{
+    width:30%;
+}
+
+.footer-coluna h4{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer-coluna a{
+    display:block;
+    text-decoration:none;
+    color:#94a3b8;
+    margin-bottom:10px;
+}
+
+.footer-coluna a:hover{
+    color:#00f2fe;
+}
+
+.footer-coluna p{
+    line-height:1.6;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.lista-enderecos{
+    grid-template-columns:1fr;
+}
+
+footer{
+    flex-direction:column;
+    gap:30px;
+}
+
+.footer-coluna{
+    width:100%;
+}
+
+}

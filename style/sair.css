@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    background:#0f172a;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h1{
+    color:#00f2fe;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00f2fe;
+}
+
+/* CONTEÚDO */
+
+.pagina{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.logout-box{
+    background:white;
+    width:500px;
+    max-width:100%;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.icone{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.logout-box h2{
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.logout-box p{
+    color:#64748b;
+    margin-bottom:35px;
+}
+
+.botoes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn-voltar,
+.btn-sair{
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-voltar{
+    background:#cbd5e1;
+    color:#0f172a;
+}
+
+.btn-voltar:hover{
+    background:#94a3b8;
+}
+
+.btn-sair{
+    background:#ef4444;
+    color:white;
+}
+
+.btn-sair:hover{
+    background:#dc2626;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    color:#94a3b8;
+    padding:40px 5%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-coluna{
+    width:30%;
+}
+
+.footer-coluna h4{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer-coluna a{
+    display:block;
+    color:#94a3b8;
+    text-decoration:none;
+    margin-bottom:10px;
+}
+
+.footer-coluna a:hover{
+    color:#00f2fe;
+}
+
+.footer-coluna p{
+    line-height:1.6;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.botoes{
+    flex-direction:column;
+}
+
+footer{
+    flex-direction:column;
+    gap:30px;
+}
+
+.footer-coluna{
+    width:100%;
+}
+
+}
